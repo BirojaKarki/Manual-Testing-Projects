@@ -1,0 +1,323 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Affects versions,Fix versions,Due date,Votes,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Outward issue link (Blocks),Inward issue link (Relates),Outward issue link (Relates),Attachment,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Sprint,Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Parent,Parent key,Parent summary,Status Category,Status Category Changed
+Booking details not displayed when clicking eye icon,VEN-49,10170,Bug,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,14/Sep/25 12:45 PM,14/Sep/25 1:02 PM,14/Sep/25 1:03 PM,,Version 1,,,0,,"*Steps to Reproduce:*
+
+# Log in as a customer.
+# Go to dashboard.
+# Go to *“Bookings”*.
+# Click the *eye icon* next to any booking.
+
+*Expected Result:*
+
+* Booking details should appear in a modal , showing all relevant information.
+
+*Actual Result:*
+
+* No booking details are displayed; the modal/page is not showing information .
+
+*Severity:* Medium 
+
+ (affects customer ability to track reservations)",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,VEN-24,,,14/Sep/25 12:47 PM;9b044ab0-09cd-4f05-990c-eae5f3695cd3;a5b92d9c-9803-4340-946a-288d77585e23.png;https://venuereservation.atlassian.net/rest/api/3/attachment/content/10036,14/Sep/25 12:48 PM;9b044ab0-09cd-4f05-990c-eae5f3695cd3;a61bfc32-e764-48a5-917c-d08c233a1962.png;https://venuereservation.atlassian.net/rest/api/3/attachment/content/10038,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6254500d,,,,,,,,,,,,,,,,0|i000pb:,,,,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),To Do,14/Sep/25 12:45 PM
+"Booking list shows ""request from user"" instead of username",VEN-48,10169,Bug,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,14/Sep/25 11:24 AM,14/Sep/25 11:52 AM,14/Sep/25 11:24 AM,,Version 1,,,0,,"*Steps to Reproduce:*
+
+# Log in as a venue owner.
+# Go to *“Booking Requests”*
+# View the list of bookings for your venues.
+
+*Expected Result:*
+
+* Each booking should display the *user’s full name or username* who made the reservation.
+
+*Actual Result:*
+
+* The booking shows *“request from user”* instead of the actual user name.
+
+*Severity:*  High 
+
+!8aad05bb-5300-4b43-a26d-e5dab55bcd2a.png|width=1318,height=792,alt=""8aad05bb-5300-4b43-a26d-e5dab55bcd2a.png""!
+
+!https://jam.dev/c/05bec3b1-6ac6-4826-8835-edf13764b414|thumbnail!",Web Browser(Chrome),Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,VEN-18,,,14/Sep/25 11:29 AM;9b044ab0-09cd-4f05-990c-eae5f3695cd3;8aad05bb-5300-4b43-a26d-e5dab55bcd2a.png;https://venuereservation.atlassian.net/rest/api/3/attachment/content/10034,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@31f9297d,,,,,,,,,,,,,,,,0|i000p3:,,,,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),To Do,14/Sep/25 11:24 AM
+"Venue image upload only supports URL,file upload not working",VEN-46,10166,Bug,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,14/Sep/25 10:29 AM,14/Sep/25 1:04 PM,14/Sep/25 1:03 PM,,Version 1,,,0,,"Steps to Reproduce:
+
+1.Log in as venue owner.
+
+2.Go to  Add Venue
+
+3.Try to upload an image file
+
+4.URL input is only available.
+
+*Expected Result:* Venue owner should be able to upload image files from local storage or drag-and-drop.
+
+*Actual Result:* Only URL input is allowed for venue images; cannot upload actual image files.
+
+*Severity:* Medium (affects user experience and completeness of feature).",Web browser(Chrome),Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,VEN-19,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@165d8ce1,,,,,,,,,,,,,,,,0|i000ov:,,,,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),To Do,14/Sep/25 10:42 AM
+Phone number field allows invalid input in profile update,VEN-45,10165,Bug,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,14/Sep/25 10:11 AM,14/Sep/25 10:42 AM,14/Sep/25 10:27 AM,,Version 1,,,0,,"Steps to Reproduce:
+
+login in application.
+
+Navigate to “Update Profile” page.
+
+Enter invalid phone numbers(eg:123werty,123!)
+
+Save changes
+
+*Expected Result*: Validation error should appear; profile should not accept invalid phone numbers.
+
+*Actual Result*: Profile accepts any input in the phone number field without error.
+
+Severity: Low
+
+!b7526c3b-ef09-40e5-8f00-edf5aa990e8a.png|width=1177,height=716,alt=""b7526c3b-ef09-40e5-8f00-edf5aa990e8a.png""!",Web browser(Chrome),Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,VEN-12,,,14/Sep/25 10:17 AM;9b044ab0-09cd-4f05-990c-eae5f3695cd3;b7526c3b-ef09-40e5-8f00-edf5aa990e8a.png;https://venuereservation.atlassian.net/rest/api/3/attachment/content/10033,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7e912428,,,,,,,,,,,,,,,,0|i000on:,,,,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,To Do,14/Sep/25 10:42 AM
+Payment shows “Success” without validating details or confirming booking,VEN-44,10164,Bug,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Highest,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 8:26 PM,11/Sep/25 8:27 PM,14/Sep/25 10:18 AM,,Version 1,Version 1,,0,payment,"When a customer completes the payment flow, the system displays a *Payment Success* message without validating the gateway response, storing a payment record, or confirming the booking. This creates a mismatch between what the user sees and what is stored in the backend, leading to financial and trust issues.
+
+*Steps to Reproduce:*
+
+# Login as a customer.
+# Select a venue and proceed to booking.
+# Go to the payment page and complete the flow (using test gateway or sandbox card).
+# Observe the result after payment is submitted.
+
+*Actual Result:*
+
+* UI immediately shows _Payment Success_ message.
+* No transaction record is created in the database.
+* Booking remains unconfirmed.
+* No confirmation email or receipt is sent.
+
+*Expected Result:*
+
+* Backend should validate the payment gateway response (transaction ID, amount, signature).
+* A payment record should be stored in the database.
+* Booking should be updated to _Confirmed_.
+* User should see confirmation on UI and receive confirmation email/receipt.
+* Failed or invalid payments should display an error and not confirm the booking.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,VEN-27,,11/Sep/25 8:23 PM;9b044ab0-09cd-4f05-990c-eae5f3695cd3;Modern Venue Booking Web Application - Google Chrome 2025-09-11 20-22-31.mp4;https://venuereservation.atlassian.net/rest/api/3/attachment/content/10003,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5c75ac1f,,,,,,,,,,,,,,,,0|i000hh:,,,VEN Sprint 1,,,,,,,,,,,,10103,VEN-4,Payment ,In Progress,11/Sep/25 8:27 PM
+Admin cannot see the name of the venue for each booking,VEN-43,10161,Bug,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 7:03 PM,11/Sep/25 8:27 PM,11/Sep/25 8:25 PM,,Version 1,Version 1,,0,,"Description: In the Admin Dashboard, while the admin can view the total number of bookings done by each user, the name of the booked venue is not displayed. This makes it impossible for the admin to identify which venues have been booked by which users.
+
+ Steps to Reproduce:  
+
+Login as Admin.  
+
+Navigate to the Booking Analytics / User Bookings section. 
+
+ Check the bookings listed per user.
+
+  Expected Result: Admin should be able to see both the number of bookings and the name of the booked venue for each user.
+
+  Actual Result: Only the number of bookings per user is displayed; the venue names are missing.  Severity: Medium (affects usability for admin)
+
+ ",QA,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,VEN-41,,11/Sep/25 7:00 PM;9b044ab0-09cd-4f05-990c-eae5f3695cd3;Untitled video - Made with Clipchamp.mp4;https://venuereservation.atlassian.net/rest/api/3/attachment/content/10001,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@318fce7c,,,,,,,,,,,,,,,,0|i000hf:,,,VEN Sprint 1,,,,,,,,,,,,10105,VEN-6,Admin & Dashboard,In Progress,11/Sep/25 7:19 PM
+"As an admin, I want to see all bookings across all venues, so that I can monitor system activity and resolve disputes.",VEN-41,10158,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 1:56 PM,11/Sep/25 8:27 PM,11/Sep/25 7:19 PM,,,Version 1,,0,admin,"Acceptance criteria:
+
+* Admin can see a list of all bookings across venues.
+* Each booking displays details (venue, customer, date, status, extras, payment).
+* Admin cannot modify bookings directly unless policies allow.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,VEN-43,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5e3c529a,,,,,,,,,,,,,,,,0|i000ha:m,,,VEN Sprint 1,,,,,,,,,,,,10105,VEN-6,Admin & Dashboard,In Progress,11/Sep/25 6:37 PM
+"As an admin, I want to approve, reject, or remove venue listings, so that only valid and accurate venues are available for booking.",VEN-40,10156,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Highest,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 1:54 PM,11/Sep/25 6:46 PM,11/Sep/25 6:43 PM,,,Version 1,,0,admin,"Acceptance critera:
+
+
+* Admin can approve, reject, or remove venue listings.
+* Changes are reflected immediately in the customer and venue owner view.
+* Admin receives confirmation for each action.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6311efcf,,,,,,,,,,,,,,,,0|i000h8:,,,VEN Sprint 1,,,,,,,,,,,,10105,VEN-6,Admin & Dashboard,In Progress,11/Sep/25 6:43 PM
+"As an admin, I want to view, edit, and deactivate users (customers and venue owners), so that I can maintain system integrity.",VEN-39,10154,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 1:53 PM,11/Sep/25 5:41 PM,11/Sep/25 4:12 PM,,,Version 1,,0,admin,"Acceptance criteria:
+
+* Admin can view a list of all users with details (name, email, role, status).
+* Admin can edit user details and deactivate/reactivate accounts.
+* Changes are saved correctly in the database.
+* Unauthorized users cannot access admin-only features.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@35bd560a,,,,,,,,,,,,,,,,0|i000of:,,,,,,,,,,,,,,,10105,VEN-6,Admin & Dashboard,To Do,11/Sep/25 1:53 PM
+"As an admin, I want to log in securely, so that I can access the dashboard and manage the system.",VEN-38,10152,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 1:53 PM,11/Sep/25 6:46 PM,11/Sep/25 4:11 PM,,,Version 1,,0,admin,"Acceptance criteria:
+
+* Admin can access the login page.
+* Valid credentials allow successful login; invalid credentials display an error.
+* Admin session is maintained securely and expires after inactivity.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3c586e9,,,,,,,,,,,,,,,,0|i000h4:,,,VEN Sprint 1,,,,,,,,,,,,10105,VEN-6,Admin & Dashboard,In Progress,11/Sep/25 6:36 PM
+"As a venue owner, I want to edit or remove existing extra services, so that I can keep offerings up to date.",VEN-37,10150,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:23 PM,11/Sep/25 5:41 PM,11/Sep/25 4:11 PM,,,Version 1,,0,food-services,"Acceptance critera:
+
+* Venue owner can update details of existing services.
+* Venue owner can remove services; removed services are no longer visible to customers.
+* Confirmation message is displayed after update or removal.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4f5b459b,,,,,,,,,,,,,,,,0|i000nz:,,,,,,,,,,,,,,,10104,VEN-5,Food &Extra Services,To Do,11/Sep/25 12:23 PM
+"As a venue owner, I want to add extra services with details and pricing, so that customers can select them during booking.",VEN-36,10148,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:22 PM,11/Sep/25 5:41 PM,11/Sep/25 4:11 PM,,,Version 1,,0,food-services,"Acceptance criteria:
+
+* Venue owner can add new extra services with name, description, price, and availability.
+* Services are saved correctly in the database and visible to customers.
+* Validation ensures required fields are filled and prices are valid.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5f4b5c45,,,,,,,,,,,,,,,,0|i000nr:,,,,,,,,,,,,,,,10104,VEN-5,Food &Extra Services,To Do,11/Sep/25 12:22 PM
+"As a customer, I want to modify or remove selected extra services before confirming the booking, so that I can adjust my booking as needed.",VEN-35,10146,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:21 PM,11/Sep/25 5:41 PM,11/Sep/25 4:11 PM,,,Version 1,,0,food-services,"Acceptance criteria:
+
+* Customer can remove or change extras before confirming the booking.
+* Changes are reflected in the booking summary and total price.
+
+
+",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@769c5f67,,,,,,,,,,,,,,,,0|i000nj:,,,,,,,,,,,,,,,10104,VEN-5,Food &Extra Services,To Do,11/Sep/25 12:21 PM
+"As a customer, I want to add extra services (food, decoration, equipment) during booking, so that my booking meets all my requirements.",VEN-34,10144,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:20 PM,11/Sep/25 5:41 PM,11/Sep/25 4:09 PM,,,Version 1,,0,food-services,"Acceptance criteria:
+
+* Customer can select one or more extras during booking.
+* Selected extras are added to the booking summary and total cost.
+* System prevents selection of unavailable or removed services.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@760447bf,,,,,,,,,,,,,,,,0|i000nb:,,,,,,,,,,,,,,,10104,VEN-5,Food &Extra Services,To Do,11/Sep/25 12:20 PM
+"As a customer, I want to see all extra services offered by a venue, so that I can choose the ones I need.",VEN-33,10142,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:18 PM,11/Sep/25 5:41 PM,11/Sep/25 5:44 PM,,,Version 1,,0,food-services,"Acceptance criteria:
+
+* Customer can see a list of all extras services for the selected venue.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@144e2b92,,,,,,,,,,,,,,,,0|i000n3:,,,,,,,,,,,,,,,10104,VEN-5,Food &Extra Services,To Do,11/Sep/25 12:18 PM
+"As a venue owner, I want to be notified when a customer completes a payment, so that I can confirm the booking.",VEN-32,10140,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,bijayakarki746,712020:39550118-a372-4264-a729-e05cb8280bb0,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:06 PM,11/Sep/25 5:41 PM,11/Sep/25 4:08 PM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Venue owner receives notification (UI alert/email optional) when a customer successfully pays.
+* Notification includes booking ID, customer name, amount, and date.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@39f43068,,,,,,,,,,,,,,,,0|i000mv:,,,,,,,,,,,,,,,10103,VEN-4,Payment ,To Do,11/Sep/25 12:06 PM
+"As a venue owner, I want to view all payments received for my bookings, so that I can track revenue.",VEN-31,10138,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,bijayakarki746,712020:39550118-a372-4264-a729-e05cb8280bb0,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:06 PM,11/Sep/25 5:41 PM,11/Sep/25 3:27 PM,,,Version 1,,0,payment,"Acceptance criteria:
+
+* Venue owner can access a list of all payments received for their venues.
+* Each payment entry shows booking details, customer, amount, date, and payment method.
+* Payments are updated in real-time or on page refresh.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@21c86f01,,,,,,,,,,,,,,,,0|i000mn:,,,,,,,,,,,,,,,10103,VEN-4,Payment ,To Do,11/Sep/25 12:06 PM
+"As a customer, I want to view all my past payments, so that I can track my spending and booking transactions.",VEN-30,10136,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,bijayakarki746,712020:39550118-a372-4264-a729-e05cb8280bb0,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:05 PM,11/Sep/25 5:41 PM,11/Sep/25 3:27 PM,,,Version 1,,0,payment,"Acceptance criteria:
+
+* Customer can access a list of past payments in their account.
+* Each entry shows relevant information (venue, date, payment method, amount, status).
+* History updates in real-time when new payments or refunds occur.
+* Customer cannot view other users’ payment history.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@662627a0,,,,,,,,,,,,,,,,0|i000mf:,,,,,,,,,,,,,,,10103,VEN-4,Payment ,To Do,11/Sep/25 12:05 PM
+"As a customer, I want to be notified if my payment fails, so that I can retry or use another payment method.",VEN-29,10134,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,bijayakarki746,712020:39550118-a372-4264-a729-e05cb8280bb0,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:03 PM,11/Sep/25 5:41 PM,11/Sep/25 3:26 PM,,,Version 1,,0,payment,"Acceptance criteria:
+
+* Customer receives a clear error message if payment fails (e.g., “Payment failed: insufficient balance”).
+* Failed payment does not confirm the booking.
+* Customer can retry payment with the same or another method.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@535dfc22,,,,,,,,,,,,,,,,0|i000m7:,,,,,,,,,,,,,,,10103,VEN-4,Payment ,To Do,11/Sep/25 12:03 PM
+"As a customer, I want to receive confirmation after a successful payment, so that I know my booking is valid.",VEN-28,10132,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,bijayakarki746,712020:39550118-a372-4264-a729-e05cb8280bb0,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:03 PM,11/Sep/25 8:28 PM,11/Sep/25 8:15 PM,,,Version 1,,0,payment,"Acceptance criteria:
+
+* Customer receives a confirmation message/UI notification immediately after successful payment.
+* Confirmation includes booking details, payment amount, and transaction ID.
+* Optional: Customer receives email/SMS confirmation if implemented.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@54905ac0,,,,,,,,,,,,,,,,0|i000hi:,,,VEN Sprint 1,,,,,,,,,,,,10103,VEN-4,Payment ,In Progress,11/Sep/25 8:24 PM
+"As a customer, I want to pay for my venue booking using a secure payment method, so that my reservation is confirmed.",VEN-27,10130,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,bijayakarki746,712020:39550118-a372-4264-a729-e05cb8280bb0,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 12:02 PM,11/Sep/25 8:27 PM,11/Sep/25 8:10 PM,,,Version 1,,0,payment,"Acceptance criteria:
+
+
+* Customer can select a payment method (credit/debit card, mobile payment, etc.).
+* System securely processes the payment via integrated payment gateway.
+* Payment amount matches the total basic booking cost.
+* Payment is saved in the database with relevant details (transaction ID, date, status).",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,VEN-44,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4bb99e6f,,,,,,,,,,,,,,,,0|i000h9:i,,,VEN Sprint 1,,,,,,,,,,,,10103,VEN-4,Payment ,In Progress,11/Sep/25 8:10 PM
+"As a customer, I want to receive confirmation after booking, so that I know my reservation is successfully recorded.",VEN-26,10128,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,h2karki,712020:57a0fc79-4401-4866-a17f-1903f11da2f5,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:47 AM,11/Sep/25 5:41 PM,11/Sep/25 3:26 PM,,,Version 1,,0,booking,"Acceptance criteria:
+
+* Customer receives a confirmation message on the UI after booking.
+* Optional: Customer receives confirmation via email/SMS if implemented.
+* Confirmation includes booking details (venue, date, time, extras, total price).
+* Confirmation ensures the booking is successfully recorded in the system database.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@13c9126e,,,,,,,,,,,,,,,,0|i000lj:,,,,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),To Do,11/Sep/25 11:47 AM
+"As a customer, I want to cancel or edit my bookings within allowed policies, so that I can adjust plans if needed.",VEN-25,10127,Story,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,h2karki,712020:57a0fc79-4401-4866-a17f-1903f11da2f5,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:46 AM,11/Sep/25 5:41 PM,11/Sep/25 3:26 PM,,,Version 1,,0,booking,"Acceptance criteria:
+
+* Customer can cancel a booking within allowed policies/timeframe.
+* Customer can modify booking details (date, extras) within allowed policies.
+* System validates changes and prevents invalid updates (e.g., booked slot unavailable).
+* Confirmation message is displayed after cancellation or modification.
+* Booking history reflects the updated status immediately.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@227166be,,,,,,,,,,,,,,,,0|i000lb:,,,,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),To Do,11/Sep/25 11:46 AM
+"As a customer, I want to view all my current and past bookings, so that I can track my reservations.",VEN-24,10126,Story,QA in progress,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:46 AM,14/Sep/25 1:03 PM,14/Sep/25 1:03 PM,,,Version 1,,0,booking,"Acceptance criteria:
+
+* Customer can view all past and current bookings in a list/table.
+* Each booking displays relevant information (venue, date, status, extras, total amount).
+* Booking history updates in real-time when a new booking is made or updated.
+* Customer cannot view other users’ bookings.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,VEN-49,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@73aa3703,,,,,,,,,,,,,,,,0|i000l3:,,,VEN Sprint 2,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),In Progress,14/Sep/25 1:03 PM
+"As a customer, I want to select additional services (food, equipment, etc.) while booking, so that my booking meets all my requirements.",VEN-23,10125,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,h2karki,712020:57a0fc79-4401-4866-a17f-1903f11da2f5,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:46 AM,14/Sep/25 12:35 PM,14/Sep/25 12:34 PM,,,Version 1,,0,booking,"Acceptance criteria:
+
+* Customer can select additional services (food, equipment, decoration, etc.) during booking.
+* Selected extras are added to the booking summary and total cost.
+* System prevents booking unavailable or removed extra services.
+* Customer can review and modify selected extras before confirming booking.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@31a2f9a8,,,,,,,,,,,,,,,,0|i000hs:wi,,,VEN Sprint 2,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),In Progress,14/Sep/25 12:35 PM
+"As a customer, I want to book a venue for a specific date and time, so that I can reserve it for my event.",VEN-22,10124,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,h2karki,712020:57a0fc79-4401-4866-a17f-1903f11da2f5,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:45 AM,11/Sep/25 8:27 PM,11/Sep/25 6:44 PM,,,Version 1,,0,booking,"Acceptance criteria:
+
+* Customer can select a venue and pick a date/time slot.
+* System validates availability for the selected slot.
+* Booking is saved to the database upon confirmation.
+* Customer receives a confirmation message: “Booking successful.”
+* Booking details are visible in the customer’s booking history.
+* System prevents double booking for the same venue and slot.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@42502504,,,,,,,,,,,,,,,,0|i000ha:,,,VEN Sprint 1,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),In Progress,11/Sep/25 6:44 PM
+"As a customer, I want to search and filter venues by location, date, and capacity, so that I can find suitable venues quickly.",VEN-21,10123,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,h2karki,712020:57a0fc79-4401-4866-a17f-1903f11da2f5,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:45 AM,11/Sep/25 8:27 PM,11/Sep/25 6:46 PM,,,Version 1,,0,booking,"Acceptance criteria:
+
+* Customer can access the search/filter option on the venue page.
+* Customer can filter by location, date, capacity, and other criteria.
+* Search results show only available venues matching the filters.
+* Results are displayed in a readable format with relevant details (name, location, price, availability).
+* No venues outside the selected criteria are displayed.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4075a9fa,,,,,,,,,,,,,,,,0|i000ha:9,,,VEN Sprint 1,,,,,,,,,,,,10102,VEN-3,Booking Management(customer side),In Progress,11/Sep/25 6:44 PM
+"As a venue owner, I want proper validation and error messages when adding/editing venues, so that I can fix mistakes and ensure accurate data.",VEN-20,10121,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:38 AM,14/Sep/25 12:34 PM,14/Sep/25 12:33 PM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Required fields cannot be left empty.
+* Price, capacity, and dates must be valid numbers or formats.
+* System displays clear error messages for invalid inputs.
+* Form submission is blocked until all validations pass.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2c7659ac,,,,,,,,,,,,,,,,0|i000hs:w,,,VEN Sprint 2,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,14/Sep/25 12:34 PM
+"As a venue owner, I want to upload and update venue images, so that customers have a clear idea of the venue before booking.",VEN-19,10120,Story,QA in progress,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Low,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:37 AM,14/Sep/25 10:41 AM,14/Sep/25 11:14 AM,,,Version 1,,0,venue-mgmt,"Acceptance criteira:
+
+* Venue owner can upload multiple images per venue.
+* Images are displayed correctly in the owner dashboard and customer view.
+* Owner can delete or replace images.
+* System validates file types and sizes (e.g., only JPG/PNG, max 5MB).",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,VEN-46,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@17ba5298,,,,,,,,,,,,,,,,0|i000hx:,,,VEN Sprint 2,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,14/Sep/25 10:27 AM
+"As a venue owner, I want to see all bookings for my venues, so that I can manage and prepare for upcoming reservations.",VEN-18,10119,Story,QA in progress,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:37 AM,14/Sep/25 1:02 PM,14/Sep/25 1:02 PM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Venue owner can view all bookings for their venues in a list/table format.
+* Each booking displays relevant info (customer name, date, time, status).
+* Bookings are updated in real-time if changes occur.
+* Venue owner cannot view bookings for other owners’ venues.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,VEN-48,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2cfbb2d5,,,,,,,,,,,,,,,,0|i000jr:,,,VEN Sprint 2,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,14/Sep/25 11:53 AM
+"As a venue owner, I want to set availability dates/times for my venues, so that customers can only book when the venue is free.",VEN-17,10118,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:36 AM,14/Sep/25 10:53 AM,14/Sep/25 11:02 AM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Venue owner can set available dates and times for each venue.
+* Bookings outside available dates/times are not allowed.
+* System saves and updates availability correctly.
+* Customers can only see and book available slots.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@205fbabb,,,,,,,,,,,,,,,,0|i000hs:x,,,VEN Sprint 2,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,14/Sep/25 10:45 AM
+"As a venue owner, I want to delete a venue, so that unavailable or removed venues are not shown to customers.",VEN-16,10117,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:36 AM,11/Sep/25 6:46 PM,11/Sep/25 6:41 PM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Venue owner can select a venue to delete.
+* System asks for confirmation before deletion.
+* Venue is removed from the owner’s list and customer view.
+* Appropriate message is displayed: “Venue deleted successfully.”",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5b284efe,,,,,,,,,,,,,,,,0|i000h5:,,,VEN Sprint 1,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,11/Sep/25 6:42 PM
+"As a venue owner, I want to edit my venue details, so that I can keep the information accurate and up-to-date.",VEN-15,10116,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:36 AM,14/Sep/25 10:45 AM,11/Sep/25 3:24 PM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Venue owner can access the edit page for their venue.
+* Changes to any field are saved correctly in the database.
+* Validation errors (e.g., empty required fields, invalid price) are shown.
+* Confirmation message is displayed: “Venue updated successfully.”
+* Updated details are reflected in the customer view.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3a69e86,,,,,,,,,,,,,,,,0|i000hs:v,,,VEN Sprint 2,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,14/Sep/25 10:44 AM
+"As a venue owner, I want to add a new venue with details and images, so that customers can view and book it.",VEN-14,10115,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,High,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:35 AM,11/Sep/25 8:09 PM,11/Sep/25 6:43 PM,,,Version 1,,0,venue-mgmt,"Acceptance criteria:
+
+* Venue owner can access “Add Venue” page/form.
+* All required fields (name, description, location, price, capacity, images) must be filled.
+* Venue is successfully saved to the database upon submission.
+* Confirmation message is displayed: “Venue added successfully.”
+* Venue appears in the owner’s list and is visible to customers (if  approved by admin).",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@17d9fd82,,,,,,,,,,,,,,,,0|i000h9:,,,VEN Sprint 1,,,,,,,,,,,,10101,VEN-2,Venue Management(Owner side),In Progress,11/Sep/25 6:42 PM
+"As a user, I want to log out from the system, so that my account remains secure when I stop using it.",VEN-13,10113,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,karkisagun10,712020:46b452d7-547b-4e28-8367-f83d5e0f1811,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:06 AM,14/Sep/25 9:39 AM,14/Sep/25 9:38 AM,,,Version 1,,0,auth,"Acceptance criteria:
+
+
+* User can click the logout button.
+* Session/cookie is cleared to end login session.
+* User can no longer book the venue but can view the venue",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6694b15,,,,,,,,,,,,,,,,0|i000hs:,,,VEN Sprint 2,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,14/Sep/25 9:38 AM
+"As a user, I want to update my profile information, so that I can keep my account information accurate and up to date.",VEN-12,10112,Story,QA in progress,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,Samir Humagain,712020:2fbf2772-750b-40d6-910e-a50d80bcc064,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:06 AM,14/Sep/25 1:03 PM,15/Sep/25 9:15 AM,,,Version 1,,0,auth,"Acceptance criteria:
+
+
+* User can edit allowed fields (e.g., name, phone, password).
+* Changes are saved correctly in the database.
+* Validation errors (e.g., invalid email format) are displayed properly.
+* Updated information is reflected immediately in the profile view.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,VEN-45,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6eeb4e67,,,,,,,,,,,,,,,,0|i000ht:,,,VEN Sprint 2,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,14/Sep/25 10:24 AM
+"As a user, I want to view my profile details, so that I can check my personal information and account settings.",VEN-11,10111,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,karkisagun10,712020:46b452d7-547b-4e28-8367-f83d5e0f1811,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:06 AM,14/Sep/25 10:27 AM,11/Sep/25 3:22 PM,,,Version 1,,0,auth,"Acceptance criteria:
+
+* Logged-in user can access the profile page.
+* All relevant details (name, email, role, etc.) are displayed correctly.
+* User cannot view or edit other users’ profiles.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@761cee7d,,,,,,,,,,,,,,,,0|i000hs:i,,,VEN Sprint 2,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,14/Sep/25 10:27 AM
+"As a user, I want the system to enforce strong passwords, so that my account remains secure.",VEN-10,10110,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,karkisagun10,712020:46b452d7-547b-4e28-8367-f83d5e0f1811,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:05 AM,14/Sep/25 10:44 AM,14/Sep/25 10:44 AM,,,Version 1,,0,auth,"Acceptance criteria:
+
+
+* System enforces password complexity rules during signup or password change.
+* Weak passwords are rejected with a clear message.
+* Passwords are stored securely (hashed/encrypted).
+* System prevents reuse of recent passwords (if applicable).",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6423df8f,,,,,,,,,,,,,,,,0|i000hs:r,,,VEN Sprint 2,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,14/Sep/25 10:44 AM
+"As a user, I want the system to recognize my role (customer, venue owner, admin), so that I see only the features allowed for my role.",VEN-9,10109,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,karkisagun10,712020:46b452d7-547b-4e28-8367-f83d5e0f1811,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:05 AM,14/Sep/25 9:38 AM,14/Sep/25 9:38 AM,,,Version 1,,0,auth,"Acceptance criteria:
+
+* Customer sees only customer-specific features (e.g., booking venues).
+* Venue owner sees owner-specific features (e.g., add/edit/delete venue).
+* Admin sees admin features (e.g., dashboard, user/venue management).
+* Unauthorized access attempts are blocked with an error message or redirect.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1dcb55ad,,,,,,,,,,,,,,,,0|i000hr:,,,VEN Sprint 2,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,14/Sep/25 9:38 AM
+"As a registered user, I want to log in using my credentials, so that I can securely access my account.",VEN-8,10108,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,karkisagun10,712020:46b452d7-547b-4e28-8367-f83d5e0f1811,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:04 AM,11/Sep/25 8:27 PM,11/Sep/25 3:21 PM,,,Version 1,,0,auth,"Acceptance criteria:
+
+* User can access the login page/form.
+* Valid email and password combination allows successful login.
+* Invalid credentials display an error message: “Invalid email or password.”
+* Successful login redirects user to the appropriate dashboard (based on role).
+* Session/cookie is created to maintain user login state.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4bdb504c,,,,,,,,,,,,,,,,0|i000hj:,,,VEN Sprint 1,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,11/Sep/25 8:09 PM
+"As a new user, I want to sign up with my email and password, so that I can create an account and access the system.",VEN-7,10107,Story,Finish,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,karkisagun10,712020:46b452d7-547b-4e28-8367-f83d5e0f1811,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 11:00 AM,11/Sep/25 8:27 PM,11/Sep/25 5:57 PM,,,Version 1,,0,auth,"Acceptance criteria:
+
+* User can access the signup page/form.
+* User must provide valid email and password.
+* Password must meet security requirements (e.g., min 8 characters, 1 uppercase, 1 number).
+* On successful signup, user receives confirmation message/email.
+* System prevents duplicate email registrations.
+* User is redirected to login page or logged in automatically after signup.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@77db0e79,,,,,,,,,,,,,,,,0|i000hd:,,,VEN Sprint 1,,,,,,,,,,,,10100,VEN-1,User Authentication and Profile Management,In Progress,11/Sep/25 8:08 PM
+Admin & Dashboard,VEN-6,10105,Epic,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 10:40 AM,11/Sep/25 10:40 AM,,,,,,0,,"This epic includes all features related to administrative management of the Venue Reservation System. The admin dashboard allows administrators to monitor and control the platform, manage users and venues, view bookings, and generate reports. The goal is to ensure smooth operations, maintain system integrity, and provide insights into platform usage.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2cda33ee,,,,,ghx-label-11,,To Do,,,,teal,,,,,0|i000h3:,,,,,,,,,,,,,,,,,,To Do,11/Sep/25 10:40 AM
+Food &Extra Services,VEN-5,10104,Epic,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 10:39 AM,11/Sep/25 10:54 AM,11/Sep/25 10:54 AM,,,,,0,,"This epic covers all features that allow customers to add additional services such as food, catering, or other extras to their venue bookings. It also allows venue owners to manage these services and make them available for booking. The goal is to enhance the customer experience by offering flexible options that complement the venue reservation.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@d1bf5c7,,,,,ghx-label-14,,To Do,,,,dark_orange,,,,,0|i000gv:,,,,,,,,,,,,,,,,,,To Do,11/Sep/25 10:39 AM
+Payment ,VEN-4,10103,Epic,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 10:38 AM,11/Sep/25 10:38 AM,11/Sep/25 3:29 PM,,,,,0,,"Purpose:This epic covers all features related to processing payments and managing orders in the Venue Reservation System. It ensures that customers can securely make payments for their bookings and that venue owners can manage orders linked to bookings. The system should handle payment confirmations, refunds, and order tracking efficiently.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@199d12cd,,,,,ghx-label-14,,To Do,,,,dark_orange,,,,,0|i000gn:,,,,,,,,,,,,,,,,,,To Do,11/Sep/25 10:38 AM
+Booking Management(customer side),VEN-3,10102,Epic,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 10:37 AM,11/Sep/25 10:37 AM,11/Sep/25 11:43 AM,,,,,0,,"Purpose:This epic covers all features related to venue booking for customers. It enables customers to search for available venues, make bookings, view their booking history, and manage or cancel bookings. The goal is to provide a seamless and secure booking experience that ensures accurate availability and smooth customer interaction.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4f742208,,,,,ghx-label-6,,To Do,,,,green,,,,,0|i000gf:,,,,,,,,,,,,,,,,,,To Do,11/Sep/25 10:37 AM
+Venue Management(Owner side),VEN-2,10101,Epic,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 10:15 AM,11/Sep/25 10:15 AM,11/Sep/25 11:31 AM,,,,,0,,"Purpose:This epic includes all features that allow venue owners to manage their venues in the system. Venue owners should be able to add, edit, and delete venue listings, manage availability, and provide accurate information to customers. The goal is to give venue owners full control over their listings while ensuring data integrity and usability.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@607340b9,,,,,ghx-label-10,,To Do,,,,blue,,,,,0|i000g7:,,,,,,,,,,,,,,,,,,To Do,11/Sep/25 10:15 AM
+User Authentication and Profile Management,VEN-1,10100,Epic,To Do,VEN,Venue Reservation Systems,software,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,Medium,,,,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,11/Sep/25 10:09 AM,11/Sep/25 10:52 AM,14/Sep/25 11:06 AM,,,,,0,,"Purpose:This epic covers all features related to user registration, login, authentication, and profile management in the Venue Reservation System. It ensures that different types of users (customers, venue owners, and admins) can securely access the system with appropriate roles and permissions. Users should be able to create accounts, log in, manage their profiles, and maintain session security.",,Biroja karki,712020:344cb687-b1cc-4c38-8f89-3f8bf949d3e8,,,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3517e902,,,,,ghx-label-14,,To Do,,,,dark_orange,,,,,0|i000fz:,,,,,,,,,,,,,,,,,,To Do,11/Sep/25 10:09 AM
