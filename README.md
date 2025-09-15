@@ -16,7 +16,7 @@ This repository contains my manual testing portfolio, including test cases, bug 
 
   
 - **API Testing** – Postman collection for basic API tests.
-- The jira venuereservation folder contains exported reports and screenshots from my Jira QA project.  
+- The jira venuereservation and dummy ecommerce jira folder contains exported reports and screenshots from my Jira QA project.  
 It demonstrates how I managed test cases, bug reports, and sprint progress using Agile methodology.
 
 ## 📂 Contents
