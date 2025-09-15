@@ -5,9 +5,15 @@
 This repository contains my manual testing portfolio, including test cases, bug reports, and QA documentation.
 
 ## 📂 Contents
-- **Test Cases** – Functional test cases for login, signup, checkout, etc.
-- **Bug Reports** – Sample defect reports with severity/priority.
-- **Test Plans** – Example of a structured test plan.
+-Sheet 1: login test cases with bug report
+-Sheet 2: Venue page test cases with bug report
+-Sheet 3:booking page test cases with bug report
+-Sheet 4: payment page test cases with bug report
+-Sheet 5:API testing of login with bug report
+-Sheet 6:API testing of owner dashboard with bug report
+-Sheet 5:API testing of user dashboard with bug report
+
+
   
 - **API Testing** – Postman collection for basic API tests.
 
